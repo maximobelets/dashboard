@@ -14,15 +14,21 @@ export const Login = () => {
         <>
             <h1>Login</h1>
             <form onSubmit={formSubmit}>
-                <label>
+                <label htmlFor="login">
+                    Name
                     <input
+                        name="login"
+                        id="login"
                         value={login}
                         type="text"
                         onChange={(e: React.FormEvent<HTMLInputElement>) => setLogin(e.currentTarget.value)}
                     />
                 </label>
-                <label>
+                <label htmlFor="password">
+                    Password
                     <input
+                        name="password"
+                        id="password"
                         value={password}
                         type="password"
                         onChange={(e: React.FormEvent<HTMLInputElement>) => setPassword(e.currentTarget.value)}
