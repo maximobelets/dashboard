@@ -1,5 +1,7 @@
 import React from "react";
 
+import s from './Login.module.scss';
+
 export const Login = () => {
     const [login, setLogin] = React.useState('');
     const [password, setPassword] = React.useState('');
@@ -13,7 +15,7 @@ export const Login = () => {
     return (
         <>
             <h1>Login</h1>
-            <form onSubmit={formSubmit}>
+            <form onSubmit={formSubmit} className={s.root}>
                 <label htmlFor="login">
                     Name
                     <input
@@ -35,7 +37,7 @@ export const Login = () => {
                     />
                 </label>
                 <button type="submit">
-                    s
+                    Submit
                 </button>
             </form>
         </>
