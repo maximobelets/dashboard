@@ -1,9 +1,10 @@
-import { useState } from 'react'
+import { useState } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import './App.css'
-import { About } from './components/About/About'
-import { Login } from './components/Login/Login'
+import { About } from './components/About/About';
+import { Login } from './components/Login/Login';
+
+import './App.css';
 
 function App() {
   const [count, setCount] = useState(0)
