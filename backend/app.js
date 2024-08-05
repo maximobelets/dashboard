@@ -1,13 +1,16 @@
 import express from 'express';
+import jwt from 'jsonwebtoken';
+import bcrypt from 'bcryptjs';
+import 'dotenv/config'
 
 const app = express();
 
-const port = 7001;
+const port = process.env.PORT;
 
 app.get('/', (req, res) => {
     res.send('App');
 })
 
 app.listen(port, () => {
-    console.log('App')
+    console.log(port, 'App')
 })
